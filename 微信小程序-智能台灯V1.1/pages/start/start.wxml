@@ -1,0 +1,5 @@
+<view>{{word1}}</view>
+<button bindtap='tap1'>你敢不敢点</button>
+<view>{{word2}}</view>
+<button bindtap='tap2'>dianba</button>
+<image src='http://api.map.baidu.com/marker?location=40.047669,116.313082&title=我的位置&content=百度奎科大厦&output=html&src=webapp.baidu.openAPIdemo'></image>

@@ -1,0 +1,2 @@
+<image src='{{pic}}' class='pic' mode="scaleToFill"></image>
+<button class='ha' bindtap='showtmp'>查看当地天气</button>

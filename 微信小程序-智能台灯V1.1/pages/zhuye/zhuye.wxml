@@ -1,0 +1,15 @@
+<image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541334562141&di=bb8ec37ca4cd25a59dd7ccd519532746&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fitbbs%2F1506%2F28%2Fc62%2F9020885_1435498435637_mthumb.jpg' class='pic1' mode="scaleToFill"></image>
+
+<view class="container">
+  <view class="userinfo" >
+    <button id="as" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="Tap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+

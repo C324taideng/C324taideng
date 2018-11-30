@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/zhuye/zhuye",
+    "pages/start/start",
+    "pages/wifi_station/tianqi/tianqi",
+    "pages/tianqi1/tianqi1",
+    "pages/wifi_station/index/index",
+    "pages/line/line",
+    "pages/index1/index1"
+  ],
+  "window": {
+    "backgroundTextStyle": "#FFFF00",
+    "navigationBarBackgroundColor": "#878787",
+    "navigationBarTitleText": "Wi-Fi 智能台灯",
+    "navigationBarTextColor": "#FFFF00",
+    "enablePullDownRefresh": true
+  },
+  "debug": true,
+  "tabBar": {
+    "color": "#FCFCFC",
+    "selectedColor": "#FFFF00",
+    "backgroundColor": "#878787",
+    "list": [
+      {
+        "pagePath": "pages/zhuye/zhuye",
+        "iconPath": "/images/icons/home142.png",
+        "selectedIconPath": "/images/icons/home142.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/start/start",
+        "iconPath": "/images/icons/ship.png",
+        "selectedIconPath": "/images/icons/ship.png",
+        "text": "照明控制"
+      },
+      {
+        "pagePath": "pages/tianqi1/tianqi1",
+        "iconPath": "/images/icons/ceshi.png",
+        "selectedIconPath": "/images/icons/ceshi.png",
+        "text": "天气"
+      },
+      {
+        "pagePath": "pages/wifi_station/index/index",
+        "iconPath": "/images/icons/shibie.png",
+        "selectedIconPath": "/images/icons/shibie.png",
+        "text": "识别图片"
+      },
+
+       {
+       "pagePath": "pages/index1/index1",
+       "iconPath": "/images/icons/birds2.png",
+       "selectedIconPath": "/images/icons/birds2.png",
+       "text": "echart"
+      }
+    ]
+  }
+}
