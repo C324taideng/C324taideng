@@ -1,0 +1,14 @@
+{
+  "pages": [
+          "pages/323/323",
+         "pages/wifi_station/tianqi/tianqi"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "C324智能台灯-mcookie端收发信息",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "debug": true
+}
