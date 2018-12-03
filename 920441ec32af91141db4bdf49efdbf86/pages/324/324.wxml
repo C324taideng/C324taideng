@@ -1,0 +1,91 @@
+<!--wxml-->
+
+
+
+
+
+<image class="logo" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543821413536&di=afde0834e8ee51b79fdfd350f0258953&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0149eb5907e5aca801214550866692.png%402o.jpg" mode="scaleToFill" >
+
+  </image>
+
+<view class="container">
+
+
+
+
+<text id='e'>  用mcookie收发信息٩(๑❛ᴗ❛๑)۶</text>
+
+
+<text id="text1">当前亮度：({{lx}}/255)</text>
+<input maxlength="10" id="input" placeholder="留言吧" 
+placeholder-style="font-size:20px; color:#bfbfbf;" 
+style="font-weight:bolder; font-size:20px; color:#000000; padding-left: 30rpx"
+  bindinput="change3"/>
+
+
+
+
+
+
+
+
+
+<text id="c">闹钟时间：{{ah}}：{{am}} </text>
+
+<button class='btn1' bindtap="send5"> 发送信息▄︻┻┳══━一</button>
+
+<view class="naozhong">
+
+
+
+
+<input maxlength="10" id="input" placeholder="输入你要设定的闹钟时间--时" 
+placeholder-style="font-size:15px; color:#bfbfbf;" 
+style="font-weight:bolder; font-size:15px; color:#000000; padding-left: 30rpx"
+  bindinput="change1"/>
+  <input maxlength="10" id="input" placeholder="输入你要设定的闹钟时间--分" 
+placeholder-style="font-size:15px; color:#bfbfbf;" 
+style="font-weight:bolder; font-size:15px; color:#000000; padding-left: 30rpx"
+  bindinput="change2"/>
+  </view>
+  
+  
+  
+   <button class='btn2' style="opacity: {{opacity}}" 
+disabled="{{disabled}}" bindtap="send5">修改闹钟时间          
+      ⊙_⊙</button>
+
+
+
+
+
+
+
+      <button class="btn3" bindtap="getDataFromOneNet">
+( • ̀ω•́ )✧快看看传感器数据吧</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<text id="a">环境亮度：{{lox}}
+</text>
+
+<text id="b">  环境温湿度：
+</text>
+
+
+</view>
+
+
+
+
+
