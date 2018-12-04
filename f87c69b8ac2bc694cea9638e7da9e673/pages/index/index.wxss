@@ -1,0 +1,65 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 30%;
+  top:15%
+}
+.logo{
+    top: 0rpx;
+   margin-left: 0rpx;
+   width: 100%;
+   height: 100%;
+   float: left;
+   position: absolute;
+ opacity: 1.0
+}
+::-webkit-scrollbar{
+  width: 0rpx;
+  height: 0rpx;
+  color: transparent;
+}
+.userinfo-avatar {
+  width: 210rpx;
+  height: 210rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  position: fixed;
+  left: 36%
+}
+
+#as{
+  
+  width: 100%;
+  margin-top: 20rpx;
+  background-color: rgba(9, 36, 54, 0.521);
+  color: rgba(100, 170, 216, 0.644);
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+ 
+}
+
+
+
+
+.userinfo-nickname {
+  color: blcak;
+  position: fixed;
+  top: 36%;
+  left:46.5%
+}
+
+.usermotto {
+ color: rgba(30, 171, 196, 0.541);
+  font-family:PingFangSC-Regular;
+  font-size:30px;
+  top: 50%;
+  left: 5%;
+ position: fixed;
+}

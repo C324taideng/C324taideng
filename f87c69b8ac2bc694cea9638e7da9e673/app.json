@@ -1,0 +1,84 @@
+{
+  "pages": [
+        "pages/index/index",
+
+          "pages/324/324",
+          "pages/Light/start",
+
+         "pages/wifi_station/tianqi/tianqi",
+          "pages/search/search",
+          "pages/result/result",
+          "pages/about/about"
+
+
+       
+  ],
+
+  "debug": true,
+
+"window": {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#00CED1",
+  "navigationBarTitleText": "   C324智能台灯",
+  "navigationBarTextStyle": "#87CEFA",
+  "enablePullDownRefresh": true
+},
+
+
+"tabBar": {
+  
+
+
+  "color": "#000000",
+  "selectedColor": "#00CCCC",
+  "borderStyle": "black",
+  "backgroundColor": "#CCC33",
+  
+  
+  
+  "list": [
+    {
+      "selectedIconPath": "images/icons/3.7.png",
+      "iconPath": "images/icons/3.9.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    },
+    {
+      "selectedIconPath": "images/icons/3.10.png",
+      "iconPath": "images/icons/3.8.png",
+      "pagePath": "pages/324/324",
+      "text": "mcookie"
+},
+
+
+{
+  "selectedIconPath": "images/icons/7.2.png",
+  "iconPath": "images/icons/7.1.png",
+  "pagePath": "pages/Light/start",
+  "text": "Arduino"
+},
+
+
+
+{
+  "selectedIconPath": "images/icons/4.1.png",
+  "iconPath": "images/icons/4.2 .png",
+  "pagePath": "pages/search/search",
+  "text": "天气"
+},
+
+
+{
+  "selectedIconPath": "images/icons/5.1.png",
+  "iconPath": "images/icons/5.2.png",
+  "pagePath": "pages/about/about",
+  "text": "C324"
+}
+
+  ]
+}
+}
+
+
+
+

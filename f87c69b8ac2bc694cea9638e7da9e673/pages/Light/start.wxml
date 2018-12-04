@@ -1,0 +1,49 @@
+<image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543819182049&di=eb7d098f44f364b1bdf19a2f51a30a9c&imgtype=0&src=http%3A%2F%2Fimg18.3lian.com%2Fd%2Ffile%2F201708%2F31%2F108feac684185b4dc690aaf1249708a1.jpg' class='pic' mode="scaleToFill"></image>
+<!--pages/mine/mine.wxml-->
+<view class="container">
+   
+  <view class="section">       <!-- 第一行 -->
+    <view class="content">
+      <text>蓝牙开关</text>
+    </view>
+    <view class="switch">
+      <switch checked="{{isbluetoothready}}" bindchange="open_BLE" />
+    </view>
+  </view>
+ 
+  <view class="section">        <!-- 第二行 -->
+    <button class="class1" type="default" size="{{primarySize}}" loading="{{searchingstatus}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="search_BLE"> {{searchingstatus?"搜索中":"搜索蓝牙"}} </button>
+  </view>
+ 
+  <block wx:for="{{list}}">     <!-- 第三行 -->
+    <view class="section" style="flex-direction:row" >
+      <view>
+        <text>{{index}}:\n </text>
+        <text>{{item.name}}\n</text>
+      </view>
+      <view class="connection">
+      <button id="{{item.deviceId}}" size="mini"
+              bindtap="connectTO"> {{deviceconnected?"已连接":"连接"}} </button>
+      </view>
+    </view>
+  </block> 
+ 
+<block wx:if="{{deviceconnected}}">    <!-- 第四行 -->
+    <view >
+      <text>\n\n数据接收\n</text>
+      <text>{{receive_data}}\n</text>
+      <!-- <button size="mini" bindtap="receiveMessages">接收</button> -->
+    </view>
+    <view class="send">
+      <form bindsubmit="formSubmit">
+        <text>\n\n数据发送:</text>
+        <input name="senddata"/>
+        <button size="mini" formType="submit">发送</button>
+        <button  catchtap='moshi1'>主灯开启</button>
+        <button  catchtap='moshi2'>主灯关闭</button>
+        <button  catchtap='moshi3'>彩灯开启</button>
+        <button  catchtap='moshi4'>彩灯关闭</button>
+      </form>
+    </view>
+</block>
+</view>
