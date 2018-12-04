@@ -5,7 +5,9 @@
           "pages/324/324",
          "pages/wifi_station/tianqi/tianqi",
           "pages/search/search",
-          "pages/result/result"
+          "pages/result/result",
+          "pages/Light/start",
+          "pages/tianqi1/tianqi1"
        
   ],
 
@@ -21,13 +23,15 @@
 
 
 "tabBar": {
+  "color": "#FCFCFC",
+  "selectedColor": "#FFFF00",
+  "backgroundColor": "#E6E6FA",
+
   
-
-
   "color": "#000000",
   "selectedColor": "#00CCCC",
   "borderStyle": "black",
-  "backgroundColor": "#CCC33",
+  
   
   
   
@@ -51,9 +55,20 @@
   "iconPath": "images/icons/4.2 .png",
   "pagePath": "pages/search/search",
   "text": "天气"
-}
-
-  ]
+},
+{
+  "selectedIconPath": "/images/icons/ship.png",
+  "iconPath": "/images/icons/ship.png",
+  "pagePath": "pages/Light/start",
+  "text": "照明控制"
+},
+{
+  "pagePath": "pages/tianqi1/tianqi1",
+  "iconPath": "/images/icons/ceshi.png",
+  "selectedIconPath": "/images/icons/ceshi.png",
+  "text": "实时天气"
+}                
+]
 }
 }
 

@@ -189,11 +189,11 @@ Page({
   },
   makeObj: function (h, m, sta, lo,sh,shm,msg) {
     var obj = {
-      url: "http://api.heclouds.com/devices/504858653/datapoints?type=3",
+      url: "http://api.heclouds.com/devices/500214167/datapoints?type=3",
 
       header: {
         "Content-Type": "application/json",
-        "api-key": "6W7mMaznfXwQ4y0BM8zz56j4lpU=",
+        "api-key": "M=kmt2Vjk=xkh09cRf=6TrZ6GjY=",
       },
       method: "post",
       data: {
@@ -225,10 +225,10 @@ Page({
   getDataFromOneNet: function () {
     //从oneNET请求我们的Wi-Fi气象站的数据
     const requestTask = wx.request({
-      url: 'https://api.heclouds.com/devices/9939133/datapoints?datastream_id=Light,Temperature,Humidity&limit=15',
+      url: 'https://api.heclouds.com/devices/500214167/datapoints?datastream_id=Light,Temperature,Humidity&limit=15',
       header: {
         'content-type': 'application/json',
-        'api-key': 'VeFI0HZ44Qn5dZO14AuLbWSlSlI='
+        'api-key': 'M=kmt2Vjk=xkh09cRf=6TrZ6GjY='
       },
       success: function (res) {
         //console.log(res.data)

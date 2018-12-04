@@ -88,10 +88,6 @@
   text-align:center;
   font-size: 60rpx;
 }
-
-
-
-
 .btn1 {
   width: 80%;
   margin-top: 20rpx;
@@ -102,8 +98,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
-  
 }
 
 

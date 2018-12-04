@@ -1,0 +1,93 @@
+.ha{
+  font-size: 25px;
+  color:rgba(201, 238, 36, 0.884);
+  position: relative;
+
+
+}
+.pic {
+  background-repeat:no-repeat;
+  height: 110vh;
+  width: 250vw;
+  left: -500rpx;
+  opacity: 0.7;
+  background-position: center;
+  position: absolute;
+  
+}
+
+.logo2{
+   top: 0rpx;
+   margin-left: -15rpx;
+   width: 100%;
+   height: 400%;
+   float: left;
+   position: absolute;
+   opacity: 0.7
+}
+.logo{
+top:-10%;
+
+ position: fixed;
+  margin-left: 0rpx;
+
+}
+
+.radio-group{
+  left: 28%;
+  top: 43%;
+  position: fixed;
+}
+
+#input{
+  background-color: #006666;
+  width: 60%;
+  height: 88rpx;
+  top: 28%;
+  left: 18%;
+  position: fixed;
+  }
+
+  #text{
+  color: #CCFF99;
+  font-family:PingFangSC-Regular;
+  font-size:15px;
+  top: 55%;
+  left: 16%;
+ position: fixed;
+  }
+
+  #btn3{
+  height: 90rpx;
+  top: 65%;
+ position: fixed;
+  left: 15%;
+  width: 240rpx;
+  color: #000000;
+  background-color: #CCCC00;
+  font-size: large;
+
+  }
+  #text2{
+  font-size: xx-large;
+  font-weight: 700;
+  top: 5%;
+  color: #000aff;
+  left: 8%;
+ position: fixed;
+  }
+
+  
+  #tmp{
+
+height: 90rpx;
+  top: 65%;
+ position: fixed;
+  right: 15%;
+  width: 240rpx;
+  color: #000000;
+  background-color:#66FF66;
+  font-size: large;
+
+
+  }
