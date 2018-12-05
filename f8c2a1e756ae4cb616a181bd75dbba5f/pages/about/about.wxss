@@ -1,0 +1,68 @@
+swiper {
+  width: 100%;
+  height: 650rpx;
+  background-color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.containers {
+  display: flex;
+  
+  flex-basis:auto;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   color:#1e1c1f9f;
+
+}
+
+.item-container image {
+  margin-top: 80px;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.item-container .name {
+  margin: 10px;
+  font-size: 20px;
+ }
+
+.item-container .brief {
+  margin: 10px;
+    color: rgb(80, 74, 78);
+  font-size: 18px;
+}
+.item-container .briefs {
+  margin: 10px;
+    color: rgb(204, 95, 171);
+  font-size: 18px;
+}
+
+.introduction {
+  margin: 20px;
+  color: rgb(54, 130, 201);
+  font-size: 20px;
+}
+
+.introductions {
+  margin: 20px;
+  color: rgb(230, 48, 78);
+  font-size: 20px;
+}
+.logo{
+    top: 10rpx;
+   width: 100%;
+   height: 100%;
+   float: left;
+   position:fixed ;
+   opacity: 1
+}
+

@@ -1,0 +1,37 @@
+<!--main.wxml-->
+<image class="logo" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543821371040&di=4e580cfed2303c7e3a95c538da7089d4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201408%2F16%2F20140816225822_vLNLJ.png" mode="scaleToFill" >
+
+  </image>
+
+
+
+
+  <view class="container">
+
+       
+        
+       
+          
+       
+            <view class="a">你要查询的是：{{inputValue}}</view>
+            <input  bindinput="bindKeyInput" placeholder="这里写城市（中国)✪ω✪" value="{{inputValue}}"/>
+      
+       
+       
+         <view class="btn1">
+         <button type="primary" loading="{{loading}}"
+                disabled="{{disabled}}" bindtap="search"> ✿点我即得天气✿
+        </button>
+        </view>
+        <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange" bindcancel="modalChange">
+            {{modalErrorText}}
+        </modal>
+
+
+
+
+  
+</view>
+
+
+

@@ -1,0 +1,40 @@
+
+
+.btn1 {
+  width: 50%;
+    top:-5%;
+  margin-top: 20rpx;
+  background-color: rgba(247, 240, 244, 0.473);
+  color: rgb(87, 98, 100);
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+
+.btn2 {
+  width: 50%;
+  margin-top: 20rpx;
+  background-color: rgba(67, 151, 184, 0.473);
+  color: rgb(89, 120, 161);
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}/* pages/sstart/sstart.wxss */
+
+.logo{
+    top: 0rpx;
+   margin-left: -25%;
+   width: 150%;
+   height: 100%;
+   float: left;
+   position:fixed ;
+   opacity: 1
+}
