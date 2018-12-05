@@ -1,0 +1,28 @@
+
+
+
+
+
+page {
+    background-color: rgba(129, 129, 123, 0.541);
+}
+#a{
+  top: 25%;
+  left: 15%;
+  font-size: x-large;
+   color:#91989cce;
+  font-weight: 600;
+  position: fixed;
+  font-family: Arial 
+
+
+}
+.logo{
+    top: 0rpx;
+   margin-left: -25%;
+   width: 150%;
+   height: 200%;
+   float: left;
+   position: absolute;
+   opacity: 1
+}
