@@ -31,16 +31,9 @@
 
 
 "tabBar": {
-  
-
-
   "color": "#000000",
   "selectedColor": "#00CCCC",
-  "borderStyle": "black",
   "backgroundColor": "#CCC33",
-  
-  
-  
   "list": [
     {
       "selectedIconPath": "images/icons/3.7.png",

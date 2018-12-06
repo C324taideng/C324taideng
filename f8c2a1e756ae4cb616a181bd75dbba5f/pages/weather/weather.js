@@ -6,7 +6,7 @@ Page({
     onLoad: function() {
         var that = this;
         var BMap = new bmap.BMapWX({
-          ak: 'U5I3kN3A4kTVAEQEhvEcBTmw5dRadsxE'
+          ak: 'RzDU2TLCQLe0dh0Afzr31rh7nfSeSjfS'
         });
         var fail = function(data) {
             console.log('fail!!!!')

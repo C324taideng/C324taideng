@@ -29,6 +29,7 @@ Page({
       { name: '绿色', value: '010' },
       { name: '黄色', value: '101' },
       { name: '青色', value: '110' },
+      { name: '无', value: '000' },
     ],
     yanchi: "1.00",
     yanchikg: "0",
@@ -51,7 +52,7 @@ Page({
     console.log(this.data.yanchikg)
   },
   
-  radioChange1: function (e) {
+  radioChange1: function(e) {
     var that = this;
     this.setData({
       value1: e.detail.value
@@ -237,7 +238,6 @@ Page({
                 string_temp = string_temp + '\n' + res.devices[i].deviceId
               }
             }
-            
             that.setData({
               id_text: string_temp,
               list: res.devices
@@ -267,7 +267,6 @@ Page({
           deviceconnected: true,
           connectedDeviceId: e.currentTarget.id
         })
-        // 启用 notify 功能
         wx.notifyBLECharacteristicValueChanged({
           state: true,
           deviceId: that.data.connectedDeviceId,
@@ -277,8 +276,6 @@ Page({
 
           }
         })
-        // 启用 notify 功能
-        // ArrayBuffer转为16进制数
         function ab2hex(buffer) {
           var hexArr = Array.prototype.map.call(
             new Uint8Array(buffer),
@@ -330,7 +327,7 @@ Page({
 
   formSubmit: function (e) {
     var that = this
-    var senddata = this.data.value1 + this.data.value2 + this.data.value3 + this.data.yanchi + this.data.yanchikg+this.data.zhudeng+this.data.pm25
+    var senddata = this.data.value1 + this.data.value2 + this.data.value3 + e.detail.value.senddata1 + this.data.yanchikg+this.data.zhudeng+this.data.pm25
     let buffer = new ArrayBuffer(senddata.length)
     let dataView = new DataView(buffer)
     for (var i = 0; i < senddata.length; i++) {
@@ -351,100 +348,6 @@ Page({
       }
     })
   },
-  moshi1: function (e) {
-    var that = this
-    var senddata = this.data.zifu1;
-    let buffer = new ArrayBuffer(senddata.length)
-    let dataView = new DataView(buffer)
-    for (var i = 0; i < senddata.length; i++) {
-      dataView.setUint8(i, senddata.charAt(i).charCodeAt())
-    }
-
-    wx.writeBLECharacteristicValue({
-      deviceId: that.data.connectedDeviceId,
-      serviceId: serviceId,
-      characteristicId: characteristicId,
-      value: buffer,
-      success: function (res) {
-        wx.showToast({
-          title: '发送成功',
-          icon: 'success',
-          duration: 2000
-        })
-      }
-    })
-  },
-  moshi2: function (e) {
-    var that = this
-    var senddata = this.data.zifu2;
-    let buffer = new ArrayBuffer(senddata.length)
-    let dataView = new DataView(buffer)
-    for (var i = 0; i < senddata.length; i++) {
-      dataView.setUint8(i, senddata.charAt(i).charCodeAt())
-    }
-
-    wx.writeBLECharacteristicValue({
-      deviceId: that.data.connectedDeviceId,
-      serviceId: serviceId,
-      characteristicId: characteristicId,
-      value: buffer,
-      success: function (res) {
-        wx.showToast({
-          title: '发送成功',
-          icon: 'success',
-          duration: 2000
-        })
-      }
-    })
-  },
-  moshi3: function (e) {
-    var that = this
-    var senddata = this.data.zifu3;
-    let buffer = new ArrayBuffer(senddata.length)
-    let dataView = new DataView(buffer)
-    for (var i = 0; i < senddata.length; i++) {
-      dataView.setUint8(i, senddata.charAt(i).charCodeAt())
-    }
-
-    wx.writeBLECharacteristicValue({
-      deviceId: that.data.connectedDeviceId,
-      serviceId: serviceId,
-      characteristicId: characteristicId,
-      value: buffer,
-      success: function (res) {
-        wx.showToast({
-          title: '发送成功',
-          icon: 'success',
-          duration: 2000
-        })
-      }
-    })
-  },
-  moshi4: function (e) {
-    var that = this
-    var senddata = this.data.zifu4;
-    let buffer = new ArrayBuffer(senddata.length)
-    let dataView = new DataView(buffer)
-    for (var i = 0; i < senddata.length; i++) {
-      dataView.setUint8(i, senddata.charAt(i).charCodeAt())
-    }
-
-    wx.writeBLECharacteristicValue({
-      deviceId: that.data.connectedDeviceId,
-      serviceId: serviceId,
-      characteristicId: characteristicId,
-      value: buffer,
-      success: function (res) {
-        wx.showToast({
-          title: '发送成功',
-          icon: 'success',
-          duration: 2000
-        })
-      }
-    })
-  },
-
-
   receiveMessages: function () {
     var that = this;
     wx.readBLECharacteristicValue({

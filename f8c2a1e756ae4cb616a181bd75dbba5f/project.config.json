@@ -9,8 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.6.4",
-	"appid": "wx48001d1b0f5ce3b2",
-	"projectname": "%E6%99%BA%E8%83%BD%E6%97%B6%E9%97%B4%E7%81%AF",
+	"appid": "wx643a49589a27f982",
+	"projectname": "sasdaa",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -20,26 +20,16 @@
 			"current": -1,
 			"list": []
 		},
-
-"plugin": {
-  "current": -1,
-  "list": []
-},
-"game": {
-  "list": []
-},    
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
 		"miniprogram": {
 			"current": -1,
 			"list": []
 		}
-	
-  
-  
-  
-  
-  }
-
-
-
-
+	}
 }

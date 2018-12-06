@@ -1,7 +1,3 @@
 <image class="logo" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543993059299&di=290a947fc1618e9c1c42cb09e11558e5&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201603%2F30%2F20160330011701_yS2EL.jpeg" mode="scaleToFill" >
-
   </image>
-
- 
- 
   <text id="a">{{weatherData}}</text>
