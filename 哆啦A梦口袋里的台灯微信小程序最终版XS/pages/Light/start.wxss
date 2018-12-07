@@ -1,0 +1,139 @@
+
+view {
+  display: inline-block;
+}
+ 
+.container {
+  padding: 0;
+  margin: 0;
+  align-items: flex-start;
+}
+ 
+.section {
+  display: inline-block;
+  width: 100%;
+  margin-top: 50rpx;
+  position: relative;
+}
+ 
+.connection {
+  margin-left: 90rpx;
+}
+ 
+.list {
+  margin-left: 20rpx;
+}
+ 
+.content {
+  margin-left: 100rpx;
+  padding: auto;
+  position: absolute;
+  top: 5rpx;
+  left: 10rpx;
+}
+ 
+.switch {
+  position: relative;
+  float: right;
+  margin-right: 100rpx;
+}
+ 
+button {
+  background: red\;
+}
+ 
+.list-item {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx; 
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 1px dashed #000;
+}
+ 
+.list-item text {
+   margin-top: 10rpx;
+}
+ 
+ 
+.list-item button {
+  margin-right: 10rpx;
+}
+ 
+.deviceconnected{
+  background-color:sandybrown
+}
+ 
+.recieve{
+  width: 100%
+}
+ 
+.recieve_textarea{
+  width: 100%;
+  margin-top: 10dpx;
+}
+ 
+input{
+  display: block;
+  border: 1px dashed;
+  width: 50px;
+}
+.pic {
+  left: -500px;
+  height: 100vh;
+  width: 300vw;
+  opacity: 0.5;
+  background-position: bottom;
+  position: fixed;
+  float: left;
+}
+.class1{
+  font-size: 60px;
+  opacity: 0.7;
+}
+.haoziti{
+  color: rgb(19, 247, 247);
+  font-size: 20px;
+  background-position: center;
+  z-index: 5;
+  position: relative;
+}
+.ziti1{
+  color: rgb(248, 25, 25);
+  font-size: 20px;
+  z-index: 5;
+  position: relative;
+}
+.ziti2{
+  color: rgb(248, 196, 25);
+  font-size: 20px;
+  z-index: 5;
+  position: relative;
+}
+.ziti3{
+  color: rgb(163, 248, 25);
+  font-size: 20px;
+  z-index: 5;
+  position: relative;
+}
+.ziti4{
+  color: rgba(0, 102, 255, 0.993);
+  font-family:Microsoft yehei;
+  font-weight:900;
+  z-index: 5;
+  position: relative;
+}
+.ziti5{
+  color: rgba(0, 110, 255, 0.651);
+  font-size: 39px;
+  border: 2px dashed;
+  z-index: 5;
+  position: relative;
+}
+.ziti6{
+  color: rgb(246, 250, 17);
+  font-size: 26px;
+  border: 2px  danshed;
+  z-index: 5;
+  position: relative;
+}

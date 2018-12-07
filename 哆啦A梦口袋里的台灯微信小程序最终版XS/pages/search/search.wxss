@@ -1,0 +1,41 @@
+/* pages/search/search.wxss */
+#a{
+  top:10%;
+  left: 23%;
+  font-size: x-large;
+  font-weight: 600;
+  color:#e7ded19f;
+  
+  font-family: Arial 
+
+
+}
+
+
+
+
+.btn1 {
+  width: 80%;
+  margin-top: 50rpx;
+  background-color: rgba(81, 233, 94, 0.473);
+  color: rgb(204, 214, 216);
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+  
+.logo{
+    top: 0rpx;
+   margin-left: -25%;
+   width: 150%;
+   height: 100%;
+   float: left;
+   position:absolute ;
+   opacity: 1
+}

@@ -1,0 +1,89 @@
+{
+  "pages": [
+        "pages/index/index",
+
+          "pages/324/324",
+         "pages/wifi_station/tianqi/tianqi",
+         "pages/Light/start",
+         "pages/sstart/sstart",
+
+
+          "pages/search/search",
+          "pages/result/result",
+
+          "pages/about/about",
+          "pages/weather/weather",
+          "pages/regeocoding/regeocoding",
+          "pages/xiaozhushou/xiaozhushou"
+
+       
+       
+  ],
+
+  "debug": true,
+
+"window": {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#00CED1",
+  "navigationBarTitleText": "   C324智能台灯",
+  "navigationBarTextStyle": "#87CEFA",
+  "enablePullDownRefresh": true
+},
+
+
+"tabBar": {
+  "color": "#000000",
+  "selectedColor": "#00CCCC",
+  "backgroundColor": "#FFFFFF",
+  "list": [
+    {
+      "selectedIconPath": "images/icons/3.7.png",
+      "iconPath": "images/icons/3.9.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    },
+    {
+      "selectedIconPath": "images/icons/3.10.png",
+      "iconPath": "images/icons/3.8.png",
+      "pagePath": "pages/324/324",
+      "text": "mcookie"
+},
+
+
+{
+  "selectedIconPath": "images/icons/7.2.png",
+  "iconPath": "images/icons/7.1.png",
+  "pagePath": "pages/Light/start",
+  "text": "Arduino"
+},
+
+
+
+
+{
+  "selectedIconPath": "images/icons/9.1.png",
+  "iconPath": "images/icons/9.2.png",
+  "pagePath": "pages/sstart/sstart",
+  "text": "点我"
+},
+
+
+
+
+
+
+
+{
+  "selectedIconPath": "images/icons/5.1.png",
+  "iconPath": "images/icons/5.2.png",
+  "pagePath": "pages/about/about",
+  "text": "C324"
+}
+
+  ]
+}
+}
+
+
+
+

@@ -1,0 +1,19 @@
+<image class="logo" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544001458568&di=dde5f6b8aeee680810391054348600f7&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F012681592fea7ba8012193a3dd50b5.jpg%401280w_1l_2o_100sh.jpg" mode="scaleToFill" >
+
+  </image>
+
+
+<view class="container">
+
+
+
+
+<button class='btn1' bindtap='regeocoding' >我是谁？我在哪？点我就知道☺</button>
+<button class='btn2' bindtap='weather'>点我获取实时天气呀☀</button>
+
+
+
+
+
+</view>
+<button class='btn3' bindtap='zhushou'>我是你的生活小助手，快点我丫❤</button>

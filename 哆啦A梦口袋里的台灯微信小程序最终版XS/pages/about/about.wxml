@@ -1,0 +1,58 @@
+<view class="container">
+  <swiper indicator-dots='true' autoplay="true" interval="5000">
+
+
+
+   <swiper-item>
+      <view class="item-containers">
+        <image class="logo" src="/images/icons/8.1.png"></image>
+       
+      </view>
+    </swiper-item>
+    
+
+    <swiper-item>
+      <view class="item-container">
+        <image src="/images/icons/6.4.jpg"></image>
+        <text class="name">张佳栋</text>
+        <text class="briefs">什么都会，什么都有，长得帅，就是没对象的大佬</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item-container">
+        <image src="/images/icons/6.1.png"></image>
+        <text class="name">刘亦铭</text>
+        <text class="brief">小程序开发美化者！！！！，mcookie的菜鸡开发者</text>
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+      <view class="item-container">
+        <image src="/images/icons/6.3.jpg"></image>
+        <text class="name">刘哲</text>
+        <text class="briefs">云，arduino的焊接与部分代码设计，颜值担当且单身</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item-container">
+        <image src="/images/icons/6.2.png"></image>
+        <text class="name">张铮睿</text>
+        <text class="brief">arduino的大部分工作，海报宣传工作</text>
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <text class="introduction">
+   如果有一天
+   哆啦A梦没有了自己的口袋
+   那我们爱的，究竟是那个人本身，
+   还是他能给予你的一切······
+   哆啦走了，但他留下的台灯会紧紧陪伴着你，
+   汇集云 oneNet 小程序 Arduino mcookie双向传递
+   告诉哆啦：我爱你！
+  </text>
+  
+  
+  <text class="introductions">ドラえもん</text>
+   <text class="introductions">C324倾情献上</text>
+</view>

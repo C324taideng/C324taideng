@@ -1,0 +1,85 @@
+<image class="pic" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544073498655&di=8285198e5b87ce5bf6c8be1e34c942cd&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3De39dd02e0055b31988f48a362bc0e853%2Feac4b74543a9822683a2b7088082b9014a90ebba.jpg" mode="scaleToFill" >
+</image>
+
+  <view class="section">       <!-- 第一行 -->
+    <view class="content">
+      <text>蓝牙开关</text>
+    </view>
+    <view class="switch">
+      <switch checked="{{isbluetoothready}}" bindchange="open_BLE" />
+    </view>
+  </view>
+ 
+  <view class="section">        <!-- 第二行 -->
+    <button class="class1" type="default" size="{{primarySize}}" loading="{{searchingstatus}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="search_BLE"> {{searchingstatus?"搜索中":"搜索蓝牙"}} </button>
+  </view>
+ 
+  <block wx:for="{{list}}">     <!-- 第三行 -->
+    <view class="section" style="flex-direction:row" >
+      <view>
+        <text>{{index}}:\n </text>
+        <text>{{item.name}}\n</text>
+      </view>
+      <view class="connection">
+      <button id="{{item.deviceId}}" size="mini"
+              bindtap="connectTO"> {{deviceconnected?"已连接":"连接"}} </button>
+      </view>
+    </view>
+  </block> 
+ 
+<block wx:if="{{deviceconnected}}">    <!-- 第四行 //-->
+    <view >
+      <text>\n\n数据接收\n</text>
+      <text>{{receive_data}}\n</text>
+      <!-- <button size="mini" bindtap="receiveMessages">接收</button> -->
+    </view>
+    <view class="send">
+      <form bindsubmit="formSubmit">
+        <text>\n\n\n</text>
+        <text class='ziti6'>主灯开关</text>
+       <switch bindchange="switch2Change"/>
+       <text>\n</text>
+       <text class='ziti6'>PM2.5输出开关</text>
+        <switch bindchange="switch1Change"/>
+         <text>\n\n</text>
+        <text class='ziti5'>流水彩灯自定义控制\n</text>
+        <text class='ziti1'>彩灯流1 颜色调整</text>
+        <radio-group class="radio-group" bindchange="radioChange1">
+                <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.value}}" checked="{{item.checked}}">
+                    <text>{{item.name}}</text>
+                </radio>
+            </radio-group>
+            <text class='ziti2'>彩灯流2 颜色调整</text>
+            <radio-group class="radio-group" bindchange="radioChange2">
+                <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.value}}" checked="{{item.checked}}">
+                    <text>{{item.name}}</text>
+                </radio>
+            </radio-group>
+            <view class='ziti3'>彩灯灯3 颜色调整</view>
+            <radio-group class="radio-group" bindchange="radioChange3">
+                <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.value}}" checked="{{item.checked}}">
+                    <text>{{item.name}}</text>
+                </radio>
+            </radio-group>
+       <!-- <input name="senddata1"/>
+        <input name="senddata2"/>
+        <input name="senddata3"/>
+        <input name="senddata4"/>
+        <input name="senddata5"/>
+        <input name="senddata6"/>
+        <input name="senddata7"/>
+        <input name="senddata8"/>
+        <input name="senddata9"/>
+        <input name="senddata10"/>
+        -->
+        <text class='ziti4'>延迟时间设置:\n</text>
+        <view class="body-view">
+        <switch bindchange="switchChange"/>
+        </view><text class='ziti4'>是否常亮</text>
+        <input name="senddata1" maxlength='4' value='1.00'/> 
+        <button size="mini" formType="submit">发送</button>
+        <button size="mini" formType="reset">清空</button>
+      </form>
+    </view>
+</block>
+

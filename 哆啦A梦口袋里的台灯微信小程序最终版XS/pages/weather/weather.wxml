@@ -1,0 +1,3 @@
+<image class="logo" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544170967498&di=1beaa122494c42279eb5376700bb47fa&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01bab6554331400000019ae9c8fa91.jpg" mode="scaleToFill" >
+  </image>
+  <text id="a">{{weatherData}}</text>
